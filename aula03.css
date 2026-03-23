@@ -43,13 +43,57 @@ body{
 
 
 .slide:nth-child(1){
-    background: linear-gradient(45deg #ff6b6b, #feca57);
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
 }
 
 .slide:nth-child(2){
-    background: linear-gradient(45deg #5f27cf, #48dbfb);
+    background: linear-gradient(45deg, #5f27cf, #48dbfb);
 }
 
 .slide:nth-child(3){
-    background: linear-gradient(45deg #1dd1a1, #10ac84);
+    background: linear-gradient(45deg, #1dd1a1, #10ac84);
+}
+
+@keyframes slide{
+    0%, 30% {
+        transform: translateX(0);
+    }
+    33%, 63% {
+        transform: translateX(-33.33%);
+    }
+    66%, 96% {
+           transform: translateX(-66.66%);
+    }
+    100% {
+        
+        transform: translateX(0);
+    }
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.indicator:nth-child(1) {
+    animation-delay; 0s;
+}
+
+.indicator:nth-child(2) {
+    animation-delay; 5s;
+ }
+    
+.indicator:nth-child(3) {
+    animation-delay; 10s;
 }
