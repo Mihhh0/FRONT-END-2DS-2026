@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./aula06.css">
-    <title>Aula 06 - site base</title>
+    <title>Atividade Resolvida: Dashboard de Estudos</title>
+    <style>
+       
+    </style>
 </head>
 <body>
-    
-    <div class="dashboard-container">
-        <!-- SIDEBAR / MENU LATERAL -->
-         <div class="sidebar">
-            <h2 style="margin-bottom: 10px;">🚀 Painel</h2>
-            <h2 class="menu-item">Início</h2>
-            <h2 class="menu-item">Analitycs</h2>
-            <h2 class="menu-item">Produtos</h2>
-            <h2 class="menu-item">Mensagens</h2>
-            <h2 class="menu-item">Configurações</h2>
-         </div>
 
-         <!-- CONTEÚDO PRINCIPAL -->
+    <!-- Container Principal do Dashboard -->
+    <div class="dashboard">
+        
+        <!-- Menu Lateral -->
+        <div class="sidebar">
+            <h3>📖 Meus Estudos</h3>
+            <div class="nav-item">Dashboard</div>
+            <div class="nav-item">Matérias</div>
+            <div class="nav-item">Simulados</div>
+        </div>
 
-         <div class="main-content">
-         
-            <!-- LINHAS DE ESTÁTISTICAS -->
-            <div class="stats-row">
-                <div class="stat-box stat-1">
-                    <h3>Usuários ativos</h3>
-                    <p>+8.432</p>
+        <!-- Conteúdo Principal -->
+        <div class="main-content">
+            
+            <!-- Seção de Estatísticas -->
+            <div class="stats-container">
+                <div class="card stat-1">
+                    <h4>Horas Estudadas</h4>
+                    <p>48h</p>
                 </div>
-                <div class="stat-box stat-1">
-                    <h3>Receita Mensal</h3>
-                    <p>R$45.900</p>
+                <div class="card stat-2">
+                    <h4>Simulados Feitos</h4>
+                    <p>12</p>
                 </div>
-                <div class="stat-box stat-1">
-                    <h3>Conversão</h3>
-                    <p>14,2%</p>
+                <div class="card stat-3">
+                    <h4>Média de Acertos</h4>
+                    <p>85%</p>
                 </div>
             </div>
 
-         </div>
+            <!-- Seção de Blocos de Conteúdo -->
+            <div class="content-container">
+                <div class="box">
+                    <h3>Metas da Semana</h3>
+                    <p>Concluir o módulo de Flexbox e praticar propriedades de alinhamento e redimensionamento no CSS Grid.</p>
+                </div>
+                <div class="box">
+                    <h3>Próxima Aula</h3>
+                    <p>JavaScript Básico - Manipulação do DOM, funções dinâmicas e captura de eventos de clique.</p>
+                </div>
+            </div>
 
+        </div>
 
     </div>
 
